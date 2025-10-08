@@ -4,6 +4,8 @@ import './LoginPage.css';
 import inst_image from '../../images/9364675fb26a.svg'
 import inst_logo from '../../images/logoinsta.png'
 import fb from '../../images/fb.png'
+import appstore from '../../images/app.png';
+import playstore from '../../images/play.png';
 
 class LoginPage extends Component {
     constructor(props){
@@ -24,7 +26,6 @@ class LoginPage extends Component {
                <div> 
                  <div className='loginpage_rightcomponent'>
                     <img className='loginpage_logo' src={inst_logo}/>
-                 {/* </div> */}
                  <div className='loginPage__signin'>
                   <input className='loginpage__text' type="text" placeholder='  Phone number, username or email address' /> 
                   <input className='loginpage__text' type="password" placeholder='  Password' />
@@ -38,7 +39,7 @@ class LoginPage extends Component {
                  </div>
 
                  <div className="login__fb">
-                  <img src={fb}/>Log in with Facebook
+                  <img className="fb" src={fb} />Log in with Facebook
                 </div>
                 <div className="login__forgot">
                   Forgot Password?
@@ -47,7 +48,22 @@ class LoginPage extends Component {
 
                  </div>
 
-               </div>
+               
+               <div className='loginpage__signupoption'>
+                <div className="loginPage__signin">
+                  Don't have an account? <span style={{color: '#33AFFF'}}>Sign up</span>   {/*can use 66C2FF also*/}
+                </div>
+                <div className="loginPage__signup">
+                  Get the app.
+                </div>
+
+              </div>
+              <div className='appplaystore'>
+                <img className='appstore' src={appstore} />
+                <img className='playstore' src={playstore} />
+
+              </div>
+              </div>
             </div> 
             </Grid>
             <Grid item size={3}> </Grid>
