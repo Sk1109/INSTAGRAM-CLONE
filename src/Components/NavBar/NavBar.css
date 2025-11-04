@@ -1,0 +1,8 @@
+.navbar__barContent{
+    height: 54px;
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+}
+.navbar_logo{
+    width: 105px;
+}
